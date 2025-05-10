@@ -30,7 +30,6 @@ namespace SupermarketWEB.Pages.Categories
             {
                 return NotFound();
             }
-
             Category = category;
             return Page();
         }
@@ -40,9 +39,7 @@ namespace SupermarketWEB.Pages.Categories
             {
                 return Page();
             }
-
             _context.Attach(Category).State = EntityState.Modified;
-
             try
             {
                 await _context.SaveChangesAsync();
@@ -58,7 +55,6 @@ namespace SupermarketWEB.Pages.Categories
                     throw;
                 }
             }
-
             return RedirectToPage("./Index");
         }
 

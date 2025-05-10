@@ -29,12 +29,17 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
-               
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
                 <td>
                     <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
                     <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
                 </td>
-        </tr>
-    }
-</tbody>
+                <td>
+                    <span></span>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
