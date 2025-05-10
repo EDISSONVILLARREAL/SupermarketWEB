@@ -23,4 +23,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Pay Mode\" />
+    <Folder Include="Pages\Providers\" />
+  </ItemGroup>
+
 </Project>
